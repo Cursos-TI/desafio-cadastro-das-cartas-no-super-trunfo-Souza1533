@@ -2,21 +2,166 @@
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+//Variaveis    
+    int ddd, pontos_turisticos, cep;
+    char cidade[51], estado[51], pais[51];
+    float populacao, area, pib;
+
+//introduçao
+    printf("   ☆ Desafio Super Trunfo - Países ☆\n\nCadastro de Cartas...\n\n");
+
+//país
+    printf("\nPais: \n");
+    scanf("%s", &pais);
+
+//estado
+    printf("\nEsdado: \n");
+    scanf("%s", &estado);
+
+//cidade
+    printf("\n== CARTA 1 ==\n");
+
+    printf("\nNome da cidade: ");
+    scanf("%s", &cidade);
+
+    printf("\nNumero de pontos turisticos: ");
+    scanf("%d", &pontos_turisticos);
+
+    printf("\nCodigo postal da cidade: ");
+    scanf("%d", &cep);
+
+    printf("\nQuantidade Populacional de %s: ", cidade);
+    scanf("%f", &populacao);
+
+    printf("\nCodigo da cidade: ");
+    scanf("%d", &ddd);
+
+    printf("\nArea da cidade em quilômetros quadrados: ");
+    scanf("%f", &area);
+
+    printf("\nPIB per capita: ");
+    scanf("%f", &pib);
+
+    printf("Carta cadastrada com sucesso!\n\n");
+
+    printf("\n== CARTA 1 ==\nCidade: %s\n", cidade);
+    printf("Pontos Turisticos: %d\n", pontos_turisticos);
+    printf("Area: %.3f km²\n", area);
+    printf("PIB: %.3f\n", pib);
+    printf("Habitantes: %.3f\n", populacao);
+    printf("CEP: %d\n", cep);
+    printf("==============\n");
+    //Primeira Carta Completa------
+
+//cidade
+    printf("\n== CARTA 2 ==\n");
+
+    printf("\nNome da cidade: ");
+    scanf("%s", &cidade);
+
+    printf("\nNumero de pontos turisticos: ");
+    scanf("%d", &pontos_turisticos);
+
+    printf("\nCodigo postal da cidade: ");
+    scanf("%d", &cep);
+
+    printf("\nQuantidade Populacional de %s: ", cidade);
+    scanf("%f", &populacao);
+
+    printf("\nCodigo da cidade: ");
+    scanf("%d", &ddd);
+
+    printf("\nArea da cidade em quilômetros quadrados: ");
+    scanf("%f", &area);
+
+    printf("\nPIB per capita: ");
+    scanf("%f", &pib);
+
+    printf("Carta cadastrada com sucesso!\n\n");
+
+    printf("\n== CARTA 2 ==\nCidade: %s\n", cidade);
+    printf("Pontos Turisticos: %d\n", pontos_turisticos);
+    printf("Area: %.3f km²\n", area);
+    printf("PIB: %.3f\n", pib);
+    printf("Habitantes: %.3f\n", populacao);
+    printf("CEP: %d\n", cep);
+    printf("==============\n");
+    //Segunda Carta Completa------
+
+
+//cidade
+    printf("\n== CARTA 3 ==\n");
+
+    printf("\nNome da cidade: ");
+    scanf("%s", &cidade);
+
+    printf("\nNumero de pontos turisticos: ");
+    scanf("%d", &pontos_turisticos);
+
+    printf("\nCodigo postal da cidade: ");
+    scanf("%d", &cep);
+
+    printf("\nQuantidade Populacional de %s: ", cidade);
+    scanf("%f", &populacao);
+
+    printf("\nCodigo da cidade: ");
+    scanf("%d", &ddd);
+
+    printf("\nArea da cidade em quilômetros quadrados: ");
+    scanf("%f", &area);
+
+    printf("\nPIB per capita: ");
+    scanf("%f", &pib);
+
+    printf("Carta cadastrada com sucesso!\n\n");
+
+    printf("\n== CARTA 3 ==\nCidade: %s\n", cidade);
+    printf("Pontos Turisticos: %d\n", pontos_turisticos);
+    printf("Area: %.3f km²\n", area);
+    printf("PIB: %.3f\n", pib);
+    printf("Habitantes: %.3f\n", populacao);
+    printf("CEP: %d\n", cep);
+    printf("==============\n");
+    //Terceira Carta Completa------
+
+
+//cidade
+    printf("\n== CARTA 4 ==\n");
+
+    printf("\nNome da cidade: ");
+    scanf("%s", &cidade);
+
+    printf("\nNumero de pontos turisticos: ");
+    scanf("%d", &pontos_turisticos);
+
+    printf("\nCodigo postal da cidade: ");
+    scanf("%d", &cep);
+
+    printf("\nQuantidade Populacional de %s: ", cidade);
+    scanf("%f", &populacao);
+
+    printf("\nCodigo da cidade: ");
+    scanf("%d", &ddd);
+
+    printf("\nArea da cidade em quilômetros quadrados: ");
+    scanf("%f", &area);
+
+    printf("\nPIB per capita: ");
+    scanf("%f", &pib);
+
+    printf("Carta cadastrada com sucesso!\n\n");
+
+    printf("\n== CARTA 4 ==\nCidade: %s\n", cidade);
+    printf("Pontos Turisticos: %d\n", pontos_turisticos);
+    printf("Area: %.3f km²\n", area);
+    printf("PIB: %.3f\n", pib);
+    printf("Habitantes: %.3f\n", populacao);
+    printf("CEP: %d\n", cep);
+    printf("==============\n");
+    //Quarta Carta Completa------
+
 
     return 0;
 }
