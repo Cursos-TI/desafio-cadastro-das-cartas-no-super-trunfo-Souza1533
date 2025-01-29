@@ -1,167 +1,106 @@
 #include <stdio.h>
 
 // Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
 
-int main() {
-//Variaveis    
+    //Variaveis-----------------------------------
     int ddd, pontos_turisticos, cep;
-    char cidade[51], estado[51], pais[51];
-    float populacao, area, pib;
-
-//introduçao
-    printf("   ☆ Desafio Super Trunfo - Países ☆\n\nCadastro de Cartas...\n\n");
-
-//país
-    printf("\nPais: \n");
-    scanf("%s", &pais);
-
-//estado
-    printf("\nEsdado: \n");
-    scanf("%s", &estado);
-
-//cidade
-    printf("\n== CARTA 1 ==\n");
-
-    printf("\nNome da cidade: ");
-    scanf("%s", &cidade);
-
-    printf("\nNumero de pontos turisticos: ");
-    scanf("%d", &pontos_turisticos);
-
-    printf("\nCodigo postal da cidade: ");
-    scanf("%d", &cep);
-
-    printf("\nQuantidade Populacional de %s: ", cidade);
-    scanf("%f", &populacao);
-
-    printf("\nCodigo da cidade: ");
-    scanf("%d", &ddd);
-
-    printf("\nArea da cidade em quilômetros quadrados: ");
-    scanf("%f", &area);
-
-    printf("\nPIB per capita: ");
-    scanf("%f", &pib);
-
-    printf("Carta cadastrada com sucesso!\n\n");
-
-    printf("\n== CARTA 1 ==\nCidade: %s\n", cidade);
-    printf("Pontos Turisticos: %d\n", pontos_turisticos);
-    printf("Area: %.3f km²\n", area);
-    printf("PIB: %.3f\n", pib);
-    printf("Habitantes: %.3f\n", populacao);
-    printf("CEP: %d\n", cep);
-    printf("==============\n");
-    //Primeira Carta Completa------
-
-//cidade
-    printf("\n== CARTA 2 ==\n");
-
-    printf("\nNome da cidade: ");
-    scanf("%s", &cidade);
-
-    printf("\nNumero de pontos turisticos: ");
-    scanf("%d", &pontos_turisticos);
-
-    printf("\nCodigo postal da cidade: ");
-    scanf("%d", &cep);
-
-    printf("\nQuantidade Populacional de %s: ", cidade);
-    scanf("%f", &populacao);
-
-    printf("\nCodigo da cidade: ");
-    scanf("%d", &ddd);
-
-    printf("\nArea da cidade em quilômetros quadrados: ");
-    scanf("%f", &area);
-
-    printf("\nPIB per capita: ");
-    scanf("%f", &pib);
-
-    printf("Carta cadastrada com sucesso!\n\n");
-
-    printf("\n== CARTA 2 ==\nCidade: %s\n", cidade);
-    printf("Pontos Turisticos: %d\n", pontos_turisticos);
-    printf("Area: %.3f km²\n", area);
-    printf("PIB: %.3f\n", pib);
-    printf("Habitantes: %.3f\n", populacao);
-    printf("CEP: %d\n", cep);
-    printf("==============\n");
-    //Segunda Carta Completa------
+    char cidade[51], pais[51], cod_carta[3];
+    float habitantes, area, pib, pib_percapita, densidade_populacional;
+    //--------------------------------------------
 
 
-//cidade
-    printf("\n== CARTA 3 ==\n");
+    void entradadedados() {
+//Entrada de dados, tudo que sera pedido ao usuario, e guardado em sua respectivas variaveis.
+        printf("Registre uma nova Carta...\n");
+        printf("\nNome da cidade: ");
+        scanf("%s", &cidade);
 
-    printf("\nNome da cidade: ");
-    scanf("%s", &cidade);
+        printf("\nCodigo da Carta:");
+        scanf("%s", &cod_carta);
 
-    printf("\nNumero de pontos turisticos: ");
-    scanf("%d", &pontos_turisticos);
+        printf("\nNumero de pontos turisticos: ");
+        scanf("%d", &pontos_turisticos);
 
-    printf("\nCodigo postal da cidade: ");
-    scanf("%d", &cep);
+        printf("\nCEP da cidade: ");
+        scanf("%d", &cep);
 
-    printf("\nQuantidade Populacional de %s: ", cidade);
-    scanf("%f", &populacao);
+        printf("\nNumero de habitantes: ");
+        scanf("%f", &habitantes);
 
-    printf("\nCodigo da cidade: ");
-    scanf("%d", &ddd);
+        printf("\nCodigo da cidade: ");
+        scanf("%d", &ddd);
 
-    printf("\nArea da cidade em quilômetros quadrados: ");
-    scanf("%f", &area);
+        printf("\nArea da cidade em quilômetros quadrados: ");
+        scanf("%f", &area);
 
-    printf("\nPIB per capita: ");
-    scanf("%f", &pib);
+        printf("\nPIB da cidade: ");
+        scanf("%f", &pib);
 
-    printf("Carta cadastrada com sucesso!\n\n");
+        pib_percapita = pib / habitantes; //calculo de pib per capita
+        densidade_populacional = habitantes / area; //calculo de densidade populacional
+        printf("Carta cadastrada com sucesso!\n\n");
+    };//--------------------------------------
 
-    printf("\n== CARTA 3 ==\nCidade: %s\n", cidade);
-    printf("Pontos Turisticos: %d\n", pontos_turisticos);
-    printf("Area: %.3f km²\n", area);
-    printf("PIB: %.3f\n", pib);
-    printf("Habitantes: %.3f\n", populacao);
-    printf("CEP: %d\n", cep);
-    printf("==============\n");
-    //Terceira Carta Completa------
-
-
-//cidade
-    printf("\n== CARTA 4 ==\n");
-
-    printf("\nNome da cidade: ");
-    scanf("%s", &cidade);
-
-    printf("\nNumero de pontos turisticos: ");
-    scanf("%d", &pontos_turisticos);
-
-    printf("\nCodigo postal da cidade: ");
-    scanf("%d", &cep);
-
-    printf("\nQuantidade Populacional de %s: ", cidade);
-    scanf("%f", &populacao);
-
-    printf("\nCodigo da cidade: ");
-    scanf("%d", &ddd);
-
-    printf("\nArea da cidade em quilômetros quadrados: ");
-    scanf("%f", &area);
-
-    printf("\nPIB per capita: ");
-    scanf("%f", &pib);
-
-    printf("Carta cadastrada com sucesso!\n\n");
-
-    printf("\n== CARTA 4 ==\nCidade: %s\n", cidade);
-    printf("Pontos Turisticos: %d\n", pontos_turisticos);
-    printf("Area: %.3f km²\n", area);
-    printf("PIB: %.3f\n", pib);
-    printf("Habitantes: %.3f\n", populacao);
-    printf("CEP: %d\n", cep);
-    printf("==============\n");
-    //Quarta Carta Completa------
+    void carta() {
+//saida de dados, que sera mostrada ao usuario.
+        printf("\nCidade: %s\n", cidade);
+        printf("Codigo da carta: %s\n", cod_carta);
+        printf("Pontos Turisticos: %d\n", pontos_turisticos);
+        printf("Area: %.3f km²\n", area);
+        printf("PIB: %.3f reais\n", pib);
+        printf("Habitantes: %.3f\n", habitantes);
+        printf("CEP: %d\n", cep);
+        printf("PIB per capita: %.3f\n", pib_percapita);
+        printf("Densidade populacional por: %.3f pessoas/km²\n", densidade_populacional);
+        printf("==================\n\n\n");
+    };//----------------------------------------
 
 
+//esta registrando 4 cartas/cidades.
+    void ordem() {
+        entradadedados();
+        carta();
+        entradadedados();
+        carta();
+        entradadedados();
+        carta();
+        entradadedados();
+        carta();
+    }//------------------------------------------
+
+//cada linha de estado, registra 4 cidades, com tudo, esse void chama todas das funcoes em ordem, e registra os 8 estados.
+ void on() {
+        
+    //Estado A
+        printf("Estado: A\n");
+        ordem();
+    //Estado B
+        printf("Estado: B\n");
+        ordem();
+    //Estado C
+        printf("Estado: C\n");
+        ordem();
+    //Estado D
+        printf("Estado: D\n");
+        ordem();
+    //Estado E
+        printf("Estado: E\n");
+        ordem();
+    //Estado F
+        printf("Estado: F\n");
+        ordem();
+    //Estado G
+        printf("Estado: G\n");
+        ordem();
+    //Estado H
+        printf("Estado: H\n");
+        ordem();
+}//-----------------------------------------
+
+//com apenas essa funçao ativando/chamando todas em ordem, dando assim o start do programa.
+int main() {
+    on();
+    printf("☆☆☆ ☆☆ ☆  FIM  ☆ ☆☆ ☆☆☆");
+//-----------------------------------------
     return 0;
 }
